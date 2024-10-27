@@ -1,0 +1,87 @@
+
+<!-- Add this line in the <head> section of your index.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<!-- Title -->
+<div class="row">
+    <div class="col-md-12 mx-auto title-div-color">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center title-div-content">
+            <h2 class="title-text">List of ISTE Student Awards</h2>
+            
+            <span class="subtitle-container">
+                <a href="" class="linked-text"><h6 class="subtitle-text text-color-change">Home</h6></a>
+                <h6 class="subtitle-text "> > List of ISTE Student Awards
+                </h6>
+            </span>
+        </div> 
+    </div> 
+</div>
+
+<!-- Content -->
+
+<!-- For ISTE Members -->
+
+<div class="container">
+    <div class="row" style="margin-top: 5vh;">
+        <div class="col-md-10 mx-auto">
+
+            
+
+            <p class="paragraph">
+                ISTE is giving away every year a number of National and 
+                Regional Awards to encourage innovation and excellence 
+                among teachers and students. The awards will be distributed 
+                to the winners during the ISTE Students Annual National 
+                Convention every year. Notifications will be invited during 
+                September/October every year. List of awards mentioned below 
+                and submit the good project report (except Narsee-Monjee) to 
+                the following address:
+            </p>
+
+            <p class="paragraph">
+                The Executive Secretary<br>
+                Indian Society for Technical Education<br>
+                Shaheed Jeet Singh Marg,<br>
+                New Delhi – 110 016<br>
+                Phone : 011-26513542, 26963431<br>
+                
+                Email : <a href="istedhq@isteonline.org" class="linked-text text-color-change">istedhq&#64;isteonline.org</a><br>
+                Website : <a href="" class="linked-text text-color-change">www.isteonline.in</a><br>
+            </p>
+
+            <h2 class="content-heading">1. NATIONAL AWARDS</h2>
+
+            <div class="container mt-5">
+                <div *ngFor="let award of awards; let i = index">
+                    <p class="paragraph" (click)="toggleExpand(i)" style="cursor: pointer;">
+                        <i class="fas" [ngClass]="isExpanded[i] ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                        {{ award.title }}
+                    </p>
+                    <div [ngClass]="{'collapse': !isExpanded[i]}">
+                        <div class="award-description">
+                            <p class="paragraph" [innerHTML]="award.description"></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div *ngIf="i === 2">
+                        <h2 class="content-heading">2. REGIONAL AWARDS</h2>
+                      </div>
+                </div>
+            </div>
+    
+
+        </div>
+
+        
+        
+    </div>
+
+
+</div>
+
+
+
+
+
+

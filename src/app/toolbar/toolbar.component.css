@@ -1,0 +1,23 @@
+*{
+  background-color: #F8F9FA;
+
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  
+.container{
+  font-family: 'Poppins-regular';
+  background-color: #F8F9FA;
+}
+
+
+.text-color-change{
+  transition: color 0.3s ease;
+}
+
+.text-color-change:hover{
+  color: #1AB69D;
+}

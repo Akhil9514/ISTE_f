@@ -1,0 +1,90 @@
+
+
+.paragraph{
+    font-family: Poppins-regular;
+    color: #7A7A7A;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: clamp(0.7rem, 4vw, 1rem);
+    margin-bottom: 3vh;
+    transition: transform 0.3s ease;
+}
+
+.paragraph:hover{
+    transform: scale(1.05);
+}
+
+
+.content-heading {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin: 0; /* Remove default margin */
+    transition: transform 0.3s ease;
+}
+
+.content-heading:hover{
+    transform: scale(1.05);
+}
+
+
+.content-subheading {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+    margin: 0; /* Remove default margin */
+    transition: transform 0.3s ease;
+    color: #7A7A7A
+}
+
+.content-subheading:hover{
+    transform: scale(1.05);
+}
+
+
+.content-subheading {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    margin: 0; /* Remove default margin */
+    transition: transform 0.3s ease;
+    color: #7A7A7A
+}
+
+.content-subheading:hover{
+    transform: scale(1.05);
+}
+
+
+.border-block{
+
+    
+    border-radius: 10px;
+    border-style: solid;     /* Defines the border style (e.g., solid, dashed, dotted) */
+    border-width: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.border-block:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.text-color-change{
+    transition: color 0.3s ease transform 0.3s ease;
+}
+
+.text-color-change:hover{
+    color: #1AB69D;
+    transform: scale(1.05);
+}
+
+img{
+    transition: transform 0.3s ease;
+    margin:1rem
+}
+
+img:hover{
+    transform: scale(1.05);
+}

@@ -1,0 +1,228 @@
+.title-div-color {
+    background-color: #F5F9FA;
+}
+
+.title-div-content {
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.title-text {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 3rem);
+    margin: 0; /* Remove default margin */
+}
+
+.subtitle-container {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 2vh;
+}
+
+.text-color-change{
+    transition: color 0.3s ease transform 0.3s ease;
+}
+
+.text-color-change:hover{
+    color: #1AB69D;
+    transform: scale(1.05);
+}
+
+.title-text {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 3rem);
+    margin: 0; /* Remove default margin */
+    transition: transform 0.3s ease;
+}
+
+.title-text:hover{
+    transform: scale(1.05);
+}
+
+.subtitle-text {
+    margin: 0; /* Remove default margin */
+    font-family: 'Poppins-regular'; 
+    font-size: clamp(0.3rem, 4vw, 1rem);
+}
+
+.linked-text{
+    text-decoration: none;
+    color: black;
+}
+
+.content-heading {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin: 0; /* Remove default margin */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #7A7A7A;
+}
+
+.content-heading:hover{
+    transform:scale(1.05);
+    color: #1AB69D;
+}
+
+
+.content-subheading{
+    font-family: 'Poppins-semibold';
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #7A7A7A;
+}
+
+.content-subheading:hover{
+    color: #1AB69D;
+    transform: scale(1.05);
+}
+
+.image-size {
+    margin-top: 2vh;
+    height: 300px;
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+}
+
+.image-size:hover{
+    transform: scale(1.05);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.bold-rule {
+    border: 0;
+    border-top: 2px solid black; /* Makes the rule thicker and more bold */
+    width: 100%; /* Adjust the width if necessary */
+  }
+  
+
+li{
+    color: #7A7A7A;
+    margin-bottom: 2vh;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+}
+
+
+
+
+
+
+
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.title-div-content {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.title-text {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 3rem);
+    margin: 0;
+    transition: transform 0.3s ease;
+    animation: slideIn 1s ease-in-out;
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    animation: slideIn 1.2s ease-in-out; 
+}
+
+.content-heading {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #7A7A7A;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.content-subheading {
+    font-family: 'Poppins-semibold';
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #7A7A7A;
+    animation: fadeIn 1.2s ease-in-out; 
+}
+
+.image-size {
+    margin-top: 2vh;
+    height: 300px;
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: scaleIn 1.5s ease-in-out; 
+}
+
+hr.bold-rule {
+    border: 0;
+    border-top: 2px solid black;
+    width: 100%;
+    animation: fadeIn 1.3s ease-in-out; 
+}
+
+li {
+    color: #7A7A7A;
+    margin-bottom: 2vh;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+    animation: slideIn 1.4s ease-in-out; 
+} */
+
+

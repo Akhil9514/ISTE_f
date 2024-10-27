@@ -1,0 +1,99 @@
+.bordered-div {
+    border: 1px solid #7A7A7A; /* Change the color and thickness of the border */
+    padding: 20px; /* Adds space inside the border */
+    margin: 20px; /* Adds space outside the border */
+    border-radius:5px;
+    padding-bottom: 0px;
+}
+
+.title-div-color {
+    background-color: #F5F9FA;
+}
+
+.title-div-content {
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.title-text {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 3rem);
+    margin: 0; /* Remove default margin */
+    transition: transform 0.3s ease;
+}
+
+.title-text:hover{
+    transform: scale(1.05);
+}
+
+.subtitle-container {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 2vh;
+}
+
+.text-color-change{
+    transition: color 0.3s ease transform 0.3s ease;
+}
+
+.text-color-change:hover{
+    color: #1AB69D;
+    transform: scale(1.05);
+}
+
+.subtitle-text {
+    margin: 0; /* Remove default margin */
+    font-family: 'Poppins-regular'; 
+    font-size: clamp(0.3rem, 4vw, 1rem);
+}
+
+.linked-text{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.content-heading {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin: 0; /* Remove default margin */
+    background-color: #F2F2F2;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+.content-subheading{
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    margin: 0; /* Remove default margin */
+    line-height: 1.5;
+    margin-bottom: 3vh;
+}
+
+li{
+    color: #7A7A7A;
+    /* margin-bottom: 2vh; */
+    line-height: 1.9;
+    text-align: justify;
+    font-size: clamp(0.4rem, 4vw, 0.9rem);
+}
+
+.paragraph{
+    color: #7A7A7A;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: clamp(0.4rem, 4vw, 0.9rem);
+    margin-bottom: 3vh;
+}
+
+
+
