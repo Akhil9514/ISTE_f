@@ -64,9 +64,10 @@
   }
   
   .home-block-left {
-    animation: home-appear-left 1s ease-out forwards; /* Adjust duration as needed */
+    animation: home-appear-left 1s ease-out forwards; 
+
   }
-  
+
 
   @keyframes home-appear-right {
     from {
@@ -171,18 +172,26 @@
     
   }
 
-  .color-chage{
+  .color-chage-yellow{
     transition: color 0.3s ease; /* Smooth transition for scaling and color */
   }
   
-  .color-chage:hover {
-    color: #1AB69D; /* Optional: change color on hover */
-
-    .color-chage.touch-active{
-        color: #1AB69D;
-    }
+  .color-chage-yellow:hover {
+    color: #F8B81F; /* Optional: change color on hover */
 
   }
+
+
+  .color-chage-white{
+    transition: color 0.3s ease; /* Smooth transition for scaling and color */
+  }
+  
+  .color-chage-white:hover {
+    color: white; /* Optional: change color on hover */
+
+  }
+
+
 
   .cursive-text {
     font-family: 'Dancing Script', cursive;
@@ -196,7 +205,7 @@
     /* border-color: #ee4a62; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #F5F9FA;
+    
     /* max-width: 50%; 
     max-height: 30%; */
 }
@@ -260,6 +269,14 @@
     text-align: center;
 }
 
+.text-color-change{
+  transition: color 0.3s ease transform 0.3s ease;
+}
+
+.text-color-change:hover{
+  color: #1AB69D;
+  transform: scale(1.05);
+}
 
 .paragraph{
     font-family: Poppins-regular;

@@ -1,9 +1,8 @@
 
-
 <section class="hero-section d-flex align-items-center">
     <div class="container hero-content text-center">
 
-        <p class="yellow-text bounce-in-text color-chage" 
+        <p class="yellow-text bounce-in-text color-chage-white" 
         style="margin-bottom:3rem; font-family:'Dancing Script', cursive ; font-size: 1.6rem;"
         [ngClass]="{'touch-active': isActive}" 
         (click)="toggleActive($event)"
@@ -11,14 +10,14 @@
             Career Development of Teachers
             
           </p>
-      <h1 class="home-block-left color-chage">
+      <h1 class="home-block-left color-chage-yellow">
         INDIAN SOCIETY FOR
         TECHNICAL EDUCATION​</h1>
-      <p class="mt-3 home-block-right color-chage">
+      <p class="mt-3 home-block-right color-chage-yellow">
         The leading National Professional non-profit making Society for the Technical
         Education System and overall development of our Technical Education System.
       </p>
-      <p class="yellow-text home color-chage home-block-top" style="margin-top:3rem;font-family:'Dancing Script', cursive ; font-size: 1.6rem; ">
+      <p class="yellow-text home color-chage-white home-block-top" style="margin-top:3rem;font-family:'Dancing Script', cursive ; font-size: 1.6rem; ">
         Personality Development of Students
       </p>
       
@@ -37,44 +36,62 @@
 
                  
                   <div class="col-md-4 ">
-                    <div class="card p-2 hover-card">
+                    <div class="card p-2 hover-card" style="background-color: #EFFAF8;">
                       <div class="card-body text-center">
-                        <img src="images/home/card/about.png" class="card-img block-left">
-                        <p class="card-title block-left">
-                            About Us
-                        </p>
-                        <p class="card-text paragraph block-right">
-                            The Indian Society for Technical Education (ISTE) is the leading National Professional non-profit making Society for the Technical Education System in our country with the motto of Career Development of Teachers and Personality Development of Students and overall development of our Technical Education System.
-                        </p>
+
+                        <a style="text-decoration: none;" [routerLink]="['/about-us']">
+
+                          <img src="images/home/card/about.png" class="card-img block-left appHoverTooltip">
+                          <p class="card-title block-left hover-info linked-text text-color-change">
+                              About Us
+                          </p>
+                          <!-- <p class="card-text paragraph block-right hover-info text-color-change">
+                              The Indian Society for Technical Education (ISTE) is the leading National Professional non-profit making Society for the Technical Education System in the country. 
+                          </p> -->
+
+                        </a>
+                        
                       </div>
                     </div>
                   </div>
 
                   <div class="col-md-4">
-                    <div class="card p-2 hover-card">
+                    <div class="card p-2 hover-card" style="background-color: #FEF2F4;">
                       <div class="card-body text-center">
-                        <img src="images/home/card/train.png" class="card-img block-left">
-                        <p class="card-title block-left">
-                            Contribute Articles in IJTE
-                        </p>
-                        <p class="card-text paragraph block-right">
-                            The Indian Journal of Technical Education is published by the Indian Society for Technical Education on quarterly basis. The contributors are expected to highlight various issues of Technical Education (incorporating disciplines of Engineering, Technology, Management, Architecture & Pharmacy, etc.,) along with meaningful suggestions for solution, refinement and innovations.
+                        <a style="text-decoration: none;" [routerLink]="['/contribute-articles-in-ijte']">
 
-                        </p>
+                          <img src="images/home/card/train.png" class="card-img block-left hover-info">
+                          <p class="card-title block-left linked-text text-color-change hover-info">
+                              Contribute Articles in IJTE
+                          </p>
+                          <!-- <p class="card-text paragraph block-right text-color-change hover-info">
+                              The Indian Journal of Technical Education is published by the Indian Society for Technical Education on quarterly basis. 
+                          </p> -->
+
+
+                        </a>
+                        
                       </div>
                     </div>
                   </div>
     
                   <div class="col-md-4">
-                    <div class="card p-2 hover-card">
+                    <div class="card p-2 hover-card" style="background-color: #F7F3FF;">
                       <div class="card-body text-center">
-                        <img src="images/home/card/membership.png" class="card-img block-left">
-                        <p class="card-title block-left">
-                            Updation of Membership Data
-                        </p>
-                        <p class="card-text paragraph block-right">
-                            It is planned to conduct the coming ISTE General Election in online mode for which details about the email and mobile numbers of all life members are required. All the life members are here by requested to confirm their details in Search your Membership mentioned on website and If any correction is required please download the proforma.
-                        </p>    
+
+                        <a style="text-decoration: none;" [routerLink]="['/updation-of-membership-data']">
+
+                          <img src="images/home/card/membership.png" class="card-img block-left hover-info">
+                          <p class="card-title block-left linked-text text-color-change hover-info">
+                              Updation of Membership Data
+                          </p>
+                          <!-- <p class="card-text paragraph block-right text-color-change hover-info">
+                              It is planned to conduct the coming ISTE General Election in online mode for which details about the email and mobile numbers of all life members are required. All the life members are here by requested to confirm their details in Search your Membership mentioned on website and If any correction is required please download the proforma.
+                          </p>  -->
+
+                        </a>
+
+                           
                         </div>
                     </div>
                   </div>
@@ -89,6 +106,7 @@
 
     
   </div>
+  
 
 
   <app-home-president-section></app-home-president-section>
@@ -97,5 +115,9 @@
   <!-- Academic Programs -->
 
   <app-home-academic-programs></app-home-academic-programs>
+
+  <div class="mb-5">
+
+  </div>
 
   

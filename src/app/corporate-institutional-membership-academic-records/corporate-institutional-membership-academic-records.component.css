@@ -1,0 +1,144 @@
+.title-div-color {
+    background-color: #F5F9FA;
+}
+
+.title-div-content {
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.title-text {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 3rem);
+    margin: 0; /* Remove default margin */
+    transition: transform 0.3s ease;
+}
+
+.title-text:hover{
+    transform: scale(1.05);
+}
+
+.subtitle-container {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 2vh;
+}
+
+.text-color-change{
+    transition: color 0.3s ease transform 0.3s ease;
+}
+
+.text-color-change:hover{
+    color: #1AB69D;
+    transform: scale(1.05);
+}
+
+.subtitle-text {
+    margin: 0; /* Remove default margin */
+    font-family: 'Poppins-regular'; 
+    font-size: clamp(0.3rem, 4vw, 1rem);
+}
+
+.linked-text{
+    text-decoration: none;
+    color: black;
+}
+
+.caps-content{
+    font-family: Poppins-regular;
+    font-weight: 500;
+    color: #1D8272;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: clamp(.1rem, 4vw, 1.15rem);
+    transition : transform 0.3s ease;
+}
+
+.caps-content:hover{
+    transform: scale(1.1);
+}
+
+.content-heading {
+    font-family: 'Poppins-regular'; 
+    font-weight: bold; 
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    margin: 0; /* Remove default margin */
+    transition: transform 0.3s ease;
+}
+
+.content-heading:hover{
+    transform: scale(1.05);
+}
+
+li{
+    color: #7A7A7A;
+    margin-bottom: 2vh;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+    transition: transform 0.3s ease;
+}
+
+li:hover{
+    transform: scale(1.05);
+}
+
+
+.paragraph{
+    font-family: Poppins-regular;
+    color: #7A7A7A;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: clamp(0.7rem, 4vw, 1rem);
+    margin-bottom: 3vh;
+    transition: transform 0.3s ease;
+}
+
+.paragraph:hover{
+    transform: scale(1.05);
+}
+
+
+.table {
+    background-color: #f9f9f9; /* Soft background color */
+    border-radius: 8px;
+    overflow: hidden; /* Rounds borders */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e8f5e9; /* Light green for hover effect */
+}
+
+.table thead {
+    background-color: #343a40; /* Dark header */
+    color: white;
+}
+
+.table-bordered {
+    border: 2px solid #dee2e6; /* Add some border to the table */
+}
+
+.thead-dark th {
+    background-color: #1AB69D; /* Custom color for header */
+    border: none; /* Remove borders from header */
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the table */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Alternate row color */
+}
+
+.table-bordered td {
+    border: 1px solid #dee2e6; /* Keep borders between rows */
+}
+
+
+

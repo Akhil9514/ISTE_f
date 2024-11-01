@@ -23,16 +23,31 @@ import { IncentivesChapterComponent } from './incentives-chapter/incentives-chap
 import { EstablishStudentChapterComponent } from './establish-student-chapter/establish-student-chapter.component';
 import { StudentIncentiveChapterComponent } from './student-incentive-chapter/student-incentive-chapter.component';
 import { AboutComponent } from './about/about.component';
+import { PresidentAboutComponent } from './president-about/president-about.component';
+import { IsteAnnualConventionsComponent } from './iste-annual-conventions/iste-annual-conventions.component';
+import { IsteStudentConventionsComponent } from './iste-student-conventions/iste-student-conventions.component';
+import { HonoraryFellowGradeMembersComponent } from './honorary-fellow-grade-members/honorary-fellow-grade-members.component';
+import { HowToBecomeIsteMemberComponent } from './how-to-become-iste-member/how-to-become-iste-member.component';
+import { MembershipBenefitsComponent } from './membership-benefits/membership-benefits.component';
+import { MembershipCardsCertificatesComponent } from './membership-cards-certificates/membership-cards-certificates.component';
+import { DownloadMembershipFormComponent } from './download-membership-form/download-membership-form.component';
+import { ContributeArticlesIjteComponent } from './contribute-articles-ijte/contribute-articles-ijte.component';
+import { UpdationMembershipDataComponent } from './updation-membership-data/updation-membership-data.component';
+import { LifeTimeMembershipComponent } from './life-time-membership/life-time-membership.component';
+import { InstitutionalMembershipAcademicRecordsComponent } from './institutional-membership-academic-records/institutional-membership-academic-records.component';
+import { StudentMembershipAcademicRecordsComponent } from './student-membership-academic-records/student-membership-academic-records.component';
+import { CorporateInstitutionalMembershipAcademicRecordsComponent } from './corporate-institutional-membership-academic-records/corporate-institutional-membership-academic-records.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 
 export const routes: Routes = [
 
   { path: '',component: HomeComponent },
   { path: 'code-of-conduct', component: CodeOfConductComponent }, 
-  { path: 'iste-journal', component: IsteJournalComponent }, 
+  // { path: 'iste-journal', component: IsteJournalComponent }, 
   { path: 'self-financing-sttp', component: SelfFinancingSttpComponent }, 
   { path: 'iste-journal-vol-45', component: IsteJournal45Component },
-  { path: 'iste-special-issue', component: IsteSpecialIssueComponent },
+  { path: 'ijte-special-issue', component: IsteSpecialIssueComponent },
   { path: 'iste-executive-council-members', component: IsteExecutiveCouncilMembersComponent },
   { path: 'office-bearers-of-iste', component: OfficeBearersComponent },
   { path: 'former-presidents-of-iste', component: FormerPresidentsComponent },
@@ -51,6 +66,21 @@ export const routes: Routes = [
   { path: 'how-to-establish-an-iste-students-chapter', component: EstablishStudentChapterComponent },
   { path: 'incentives-to-iste-student-chapters', component: StudentIncentiveChapterComponent },
   { path: 'about-us', component: AboutComponent },
+  { path: 'president-info', component: PresidentAboutComponent },
+  { path: 'details-of-iste-annual-conventions', component: IsteAnnualConventionsComponent },
+  { path: 'details-of-iste-student-conventions', component: IsteStudentConventionsComponent },
+  { path: 'honorary-fellow-grade-members-of-iste', component: HonoraryFellowGradeMembersComponent },
+  { path: 'how-to-become-iste-member', component: HowToBecomeIsteMemberComponent },
+  { path: 'membership-benefits', component: MembershipBenefitsComponent },
+  { path: 'membership-cards-certificates', component: MembershipCardsCertificatesComponent },
+  { path: 'download-form', component: DownloadMembershipFormComponent },
+  { path: 'contribute-articles-in-ijte', component: ContributeArticlesIjteComponent },
+  { path: 'updation-of-membership-data', component: UpdationMembershipDataComponent },
+  { path: 'life-time-membership', component: LifeTimeMembershipComponent },
+  { path: 'institutional-membership', component: InstitutionalMembershipAcademicRecordsComponent },
+  { path: 'student-membership', component: StudentMembershipAcademicRecordsComponent },
+  { path: 'corporate-institutional-membership', component: CorporateInstitutionalMembershipAcademicRecordsComponent },
+  { path: 'iste-newsletter', component: NewsletterComponent },
 
 
   

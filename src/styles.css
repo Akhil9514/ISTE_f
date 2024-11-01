@@ -120,5 +120,49 @@ h6{
 }
 
 
+/* Styles for elements with hover-info */
+.hover-info {
+  cursor: pointer;
+}
+
+/* Hover effect to show "Click to know more" */
+.hover-info::after {
+  content: "Click to know more";
+  position: absolute;
+  top: 50%; 
+  left: 80%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1020;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show the message on hover */
+.hover-info:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.text-color-change{
+  transition: color 0.3s ease transform 0.3s ease;
+}
+
+.text-color-change:hover{
+  color: #1AB69D;
+  transform: scale(1.05);
+}
+.linked-text{
+  text-decoration: none;
+  color: black;
+}
+
 
 

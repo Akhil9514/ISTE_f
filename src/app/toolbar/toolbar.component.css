@@ -1,4 +1,5 @@
-*{
+.toolbar-background{
+  width: 100vw;
   background-color: #F8F9FA;
 
 }
@@ -20,4 +21,12 @@
 
 .text-color-change:hover{
   color: #1AB69D;
+}
+
+
+.fixed-top-custom {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1020; /* Ensures the navbar stays above other elements */
 }

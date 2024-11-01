@@ -1,136 +1,153 @@
-<div class="container" style="background-color: #F8F9FA;">
-	<div class="row">
-	  <div class="col-md-10 mx-auto">
-		<nav class="navbar navbar-expand-md navbar-light bg-body-tertiary">
-		  <div class="container">
-			<!-- Brand and Logo Section -->
-			<span class="navbar-brand d-flex align-items-center">
-			  <img src="images/logo.png" alt="ISTE Logo" class="me-2" style="width: 40px; height: 40px;">
-			  <strong>ISTE</strong>
-			  
-			</span>
-			<button
-			  class="navbar-toggler"
-			  type="button"
-			  aria-controls="navbarContent"
-			  [attr.aria-expanded]="!collapsed"
-			  aria-label="Toggle navigation"
-			  (click)="collapsed = !collapsed"
-			>
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-  
-			<div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
-			  <ul class="navbar-nav ms-auto">
-				<li class="nav-item" ngbDropdown>
-				  <a
-					class="nav-link"
-					tabindex="0"
-					ngbDropdownToggle
-					id="navbarDropdown1"
-					role="button"
-				  >
-					Home
-				  </a>
-				  <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-					<a ngbDropdownItem [routerLink]="['/about-us']" class="text-color-change">About Us</a>
-					<a ngbDropdownItem [routerLink]="['/code-of-conduct']" class="text-color-change">Code of Conduct</a>
-					<a ngbDropdownItem [routerLink]="['/iste-journal']" class="text-color-change">ISTE Journal</a>
 
-					<a ngbDropdownItem [routerLink]="['/self-financing-sttp']" class="text-color-change">Self-Financing STTP</a>
-					<a ngbDropdownItem [routerLink]="['/iste-journal-vol-45']" class="text-color-change">ISTE Journal Vol 45</a>
-					<a ngbDropdownItem [routerLink]="['/iste-special-issue']" class="text-color-change">ISTE Special Issue</a>
+<div class="toolbar-background">
 
-					<a ngbDropdownItem [routerLink]="['/iste-gallery']" class="text-color-change">Gallery</a>
-
-				  </div>
-				</li>
-
-
-				<li class="nav-item" ngbDropdown>
-					<a
-					  class="nav-link"
-					  tabindex="0"
-					  ngbDropdownToggle
-					  id="navbarDropdown1"
-					  role="button"
-					>
-					  ISTE Members
-					</a>
-					<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-					  <a ngbDropdownItem [routerLink]="['/iste-executive-council-members']" class="text-color-change">ISTE Executive Council Members</a>
-					  <a ngbDropdownItem [routerLink]="['/office-bearers-of-iste']" class="text-color-change">Office Bearers of ISTE</a>
-					  <a ngbDropdownItem [routerLink]="['/former-executive-secretaries']" class="text-color-change">Former Presidents of ISTE</a>
-  
-					  <a ngbDropdownItem [routerLink]="['/check-your-institutional-membership-no']" class="text-color-change">Check your Institutional Membership</a>
-					  <a ngbDropdownItem [routerLink]="['/distribution-of-student-membership-fee']" class="text-color-change">Distribution of Student Membership Fee</a>
-    
-					</div>
-				  </li>
-
-
-
-				  <li class="nav-item" ngbDropdown>
-					<a
-					  class="nav-link"
-					  tabindex="0"
-					  ngbDropdownToggle
-					  id="navbarDropdown1"
-					  role="button"
-					>
-					  Awards
-					</a>
-					<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-					  <a ngbDropdownItem [routerLink]="['/list-of-iste-faculty-awards']" class="text-color-change">List of ISTE Faculty Awards</a>
-					  <a ngbDropdownItem [routerLink]="['/list-of-iste-best-m-tech-thesis-awards']" class="text-color-change">List of ISTE best M.Tecg Thesis Awards</a>
-					  <a ngbDropdownItem [routerLink]="['/list-of-iste-student-awards']" class="text-color-change">List of ISTE Student Awards</a>
-					</div>
-				  </li>
-
-
+	<div class="container" style="background-color: #F8F9FA;">
+		<div class="row">
+		  <div class="col-md-10 mx-auto">
+			<nav class="navbar navbar-expand-md navbar-light bg-body-tertiary ">
+			  <div class="container">
+				<!-- Brand and Logo Section -->
+				<span class="navbar-brand d-flex align-items-center">
+				<a style="text-decoration: none;" [routerLink]="['']">
+	
+					<img src="images/logo.png" alt="ISTE Logo" class="me-2" style="width: 50px; height: 50px;">
+				  
+				  <span class="linked-text" style="font-size:25px"><strong>ISTE</strong></span>
+	
+				</a>
 				  
 				  
-				  <li class="nav-item" ngbDropdown>
-					<a
-					  class="nav-link"
-					  tabindex="0"
-					  ngbDropdownToggle
-					  id="navbarDropdown1"
-					  role="button"
-					>
-					  ISTE & Student Chapter
-					</a>
-					<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-					  <a ngbDropdownItem [routerLink]="['/how-to-establish-an-iste-chapter']" class="text-color-change">How to establish an ISTE Chapter</a>
-					  <a ngbDropdownItem [routerLink]="['/incentives-to-iste-chapter']" class="text-color-change">Incentives to ISTE Chapter</a>
-					  <a ngbDropdownItem [routerLink]="['/how-to-establish-an-iste-students-chapter']" class="text-color-change">How to establish an ISTE Students Chapter</a>
-					  <a ngbDropdownItem [routerLink]="['/incentives-to-iste-student-chapters']" class="text-color-change">Incentives to ISTE Students Chapter</a>
-					</div>
-				  </li>
-
-
-				  <li class="nav-item" ngbDropdown>
-					<a
-					  class="nav-link"
-					  tabindex="0"
-					  ngbDropdownToggle
-					  id="navbarDropdown1"
-					  role="button"
-					>
-					  ISTE Section
-					</a>
-					<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-					  <a ngbDropdownItem [routerLink]="['/iste-section-chairmen']" class="text-color-change">ISTE Section Chairman</a>
-					  <a ngbDropdownItem [routerLink]="['/section-managing-committee-members']" class="text-color-change">Section Managing Committee Members</a>
-					  <a ngbDropdownItem [routerLink]="['/iste-section-secretaries']" class="text-color-change">ISTE Section Secretaries</a>
-					</div>
-				  </li>
-				
-  
-			  </ul>
-			</div>
+				</span>
+				<button
+				  class="navbar-toggler"
+				  type="button"
+				  aria-controls="navbarContent"
+				  [attr.aria-expanded]="!collapsed"
+				  aria-label="Toggle navigation"
+				  (click)="collapsed = !collapsed"
+				>
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+	  
+				<div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+				  <ul class="navbar-nav ms-auto">
+					<li class="nav-item" ngbDropdown>
+					  <a
+						class="nav-link"
+						tabindex="0"
+						ngbDropdownToggle
+						id="navbarDropdown1"
+						role="button"
+						style="font-weight: bold;"
+					  >
+						Home
+					  </a>
+					  <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+						<a ngbDropdownItem [routerLink]="['/about-us']" class="text-color-change">About Us</a>
+						<a ngbDropdownItem [routerLink]="['/code-of-conduct']" class="text-color-change">Code of Conduct</a>
+						<a ngbDropdownItem [routerLink]="['/iste-newsletter']" class="text-color-change">ISTE Newsletter</a>
+	
+						<a ngbDropdownItem [routerLink]="['/self-financing-sttp']" class="text-color-change">Self-Financing STTP</a>
+						<a ngbDropdownItem [routerLink]="['/iste-journal-vol-45']" class="text-color-change">ISTE Journal Vol 45</a>
+						<a ngbDropdownItem [routerLink]="['/ijte-special-issue']" class="text-color-change">IJTE Special Issue</a>
+	
+						<a ngbDropdownItem [routerLink]="['/iste-gallery']" class="text-color-change">Gallery</a>
+	
+					  </div>
+					</li>
+	
+	
+					<li class="nav-item" ngbDropdown>
+						<a
+						  class="nav-link"
+						  tabindex="0"
+						  ngbDropdownToggle
+						  id="navbarDropdown1"
+						  role="button"
+						  style="font-weight: bold;"
+						>
+						  ISTE Members
+						</a>
+						<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+						  <a ngbDropdownItem [routerLink]="['/iste-executive-council-members']" class="text-color-change">ISTE Executive Council Members</a>
+						  <a ngbDropdownItem [routerLink]="['/office-bearers-of-iste']" class="text-color-change">Office Bearers of ISTE</a>
+						  <a ngbDropdownItem [routerLink]="['/former-executive-secretaries']" class="text-color-change">Former Presidents of ISTE</a>
+	  
+						  <a ngbDropdownItem [routerLink]="['/check-your-institutional-membership-no']" class="text-color-change">Check your Institutional Membership</a>
+						  <a ngbDropdownItem [routerLink]="['/distribution-of-student-membership-fee']" class="text-color-change">Distribution of Student Membership Fee</a>
+		
+						</div>
+					  </li>
+	
+	
+	
+					  <li class="nav-item" ngbDropdown>
+						<a
+						  class="nav-link"
+						  tabindex="0"
+						  ngbDropdownToggle
+						  id="navbarDropdown1"
+						  role="button"
+						  style="font-weight: bold;"
+						>
+						  Awards
+						</a>
+						<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+						  <a ngbDropdownItem [routerLink]="['/list-of-iste-faculty-awards']" class="text-color-change">List of ISTE Faculty Awards</a>
+						  <a ngbDropdownItem [routerLink]="['/list-of-iste-best-m-tech-thesis-awards']" class="text-color-change">List of ISTE best M.Tech Thesis Awards</a>
+						  <a ngbDropdownItem [routerLink]="['/list-of-iste-student-awards']" class="text-color-change">List of ISTE Student Awards</a>
+						</div>
+					  </li>
+	
+	
+					  
+					  
+					  <li class="nav-item" ngbDropdown>
+						<a
+						  class="nav-link"
+						  tabindex="0"
+						  ngbDropdownToggle
+						  id="navbarDropdown1"
+						  role="button"
+						  style="font-weight: bold;"
+						>
+						  ISTE & Student Chapter
+						</a>
+						<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+						  <a ngbDropdownItem [routerLink]="['/how-to-establish-an-iste-chapter']" class="text-color-change">How to establish an ISTE Chapter</a>
+						  <a ngbDropdownItem [routerLink]="['/incentives-to-iste-chapter']" class="text-color-change">Incentives to ISTE Chapter</a>
+						  <a ngbDropdownItem [routerLink]="['/how-to-establish-an-iste-students-chapter']" class="text-color-change">How to establish an ISTE Students Chapter</a>
+						  <a ngbDropdownItem [routerLink]="['/incentives-to-iste-student-chapters']" class="text-color-change">Incentives to ISTE Students Chapter</a>
+						</div>
+					  </li>
+	
+	
+					  <li class="nav-item" ngbDropdown>
+						<a
+						  class="nav-link"
+						  tabindex="0"
+						  ngbDropdownToggle
+						  id="navbarDropdown1"
+						  role="button"
+						  style="font-weight: bold;"
+						>
+						  ISTE Section
+						</a>
+						<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+						  <a ngbDropdownItem [routerLink]="['/iste-section-chairmen']" class="text-color-change">ISTE Section Chairman</a>
+						  <a ngbDropdownItem [routerLink]="['/section-managing-committee-members']" class="text-color-change">Section Managing Committee Members</a>
+						  <a ngbDropdownItem [routerLink]="['/iste-section-secretaries']" class="text-color-change">ISTE Section Secretaries</a>
+						</div>
+					  </li>
+					
+	  
+				  </ul>
+				</div>
+			  </div>
+			</nav>
 		  </div>
-		</nav>
+		</div>
 	  </div>
-	</div>
-  </div>
+	
+
+</div>

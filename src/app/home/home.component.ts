@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common'; // Import CommonModule here
 
 import { HomePresidentSectionComponent } from '../home-president-section/home-president-section.component';
 import { HomeAcademicProgramsComponent } from '../home-academic-programs/home-academic-programs.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,7 @@ import { HomeAcademicProgramsComponent } from '../home-academic-programs/home-ac
     CommonModule,
     HomePresidentSectionComponent,
     HomeAcademicProgramsComponent,
+    RouterModule,
     
   ],
   templateUrl: './home.component.html',

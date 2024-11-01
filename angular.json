@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ISTE_f": {
+    "iste-f": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -44,8 +44,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "990kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2mb",
+                  "maximumError": "2.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ISTE_f:build:production"
+              "buildTarget": "iste-f:build:production"
             },
             "development": {
-              "buildTarget": "ISTE_f:build:development"
+              "buildTarget": "iste-f:build:development"
             }
           },
           "defaultConfiguration": "development"
